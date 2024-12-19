@@ -55,7 +55,7 @@ const timeLeftElem = document.getElementById("time-left");
 let currentQuestion = 0;
 let score = 0;
 let timer;
-let timeLeft = 20; // 30 seconds for each question
+let timeLeft = 15; // 30 seconds for each question
 
 function loadQuestion() {
   // Update question and options
@@ -66,7 +66,7 @@ function loadQuestion() {
   option_d.textContent = quiz[currentQuestion].ans4text;
 
   // Reset timer
-  timeLeft = 20;
+  timeLeft = 15;
   timeLeftElem.textContent = timeLeft;
 
   // Start timer countdown
